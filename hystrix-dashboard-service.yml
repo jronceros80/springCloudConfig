@@ -1,0 +1,17 @@
+# Spring properties
+server:
+  port: 4444   # HTTP (Tomcat) port
+ 
+turbine:
+  aggregator:
+    clusterConfig: GREETING-CLIENT-SERVICE
+  appConfig: greeting-client-service
+ 
+# Configure this Discovery Server
+eureka:
+  instance:
+    hostname: localhost
+  client:  # Not a client, don't register with yourself
+    registerWithEureka: false
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
