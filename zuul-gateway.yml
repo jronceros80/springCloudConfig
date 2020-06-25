@@ -1,13 +1,9 @@
 zuul:
   routes:
-    greetings:
-      path: /greeting/**
-      serviceId: GREETING-SERVICE
-      stripPrefix: false
-    products:
-      path: /product/**
-      serviceId: product-service
-      stripPrefix: false
+    payments:
+      path: /payment/**
+      serviceId: ORANGE-SERVICE
+      stripPrefix: false   
       
 # Discovery Server Access
 eureka:
